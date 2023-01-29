@@ -1,0 +1,8 @@
+package com.Learn.SpringLearn.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.Learn.SpringLearn.entity.product_category;
+
+public interface productCat_Repo extends JpaRepository<product_category , Long> {
+}

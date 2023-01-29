@@ -1,0 +1,30 @@
+<!doctype html>
+    <html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+	<link rel="stylesheet" href="Main.css">
+    <meta charset="UTF-8">
+    <title>My Flop_Spring</title>
+</head>
+<body>
+    <div align="center">
+        <h1>Products</h1>
+        <table border="2" class = "table table-striped table-responsive-md">
+            <thead>
+            <tr>
+<!--                <th>Id</th>-->
+                <th>Name</th>
+                <th>ImgUrl</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="project : ${employee}">
+                <td align="center" th:text=${project.name}></td>
+                <td align="center" th:text=${project.img}></td>
+                <td align="center" th:text=${project.c_id}></td>
+                <td align="center" th:text=${project.id}></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

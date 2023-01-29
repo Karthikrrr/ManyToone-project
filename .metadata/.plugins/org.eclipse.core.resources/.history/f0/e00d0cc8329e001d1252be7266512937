@@ -1,0 +1,30 @@
+package com.Learn.SpringLearn.server;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.Learn.SpringLearn.dao.productCat_Repo;
+import com.Learn.SpringLearn.dao.product_Repo;
+import com.Learn.SpringLearn.entity.product;
+import com.Learn.SpringLearn.entity.product_category;
+
+public class productscall implements productscallint {
+	
+	@Autowired
+	private product_Repo productsRep;
+	private productCat_Repo productsCatRep;
+
+	@Override
+	public List<product> getAllproducts() {
+		
+		return productsRep.findAll();
+	}
+
+	@Override
+	public List<product_category> getAllcategorys() {
+		
+		return productsCatRep.findAll();
+	}
+	
+}

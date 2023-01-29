@@ -1,0 +1,16 @@
+package com.Learn.SpringLearn.Controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class My_Controller {
+
+	
+	
+	@GetMapping("/")
+	public String Strat()
+	{
+		return "start";
+	}
+	}

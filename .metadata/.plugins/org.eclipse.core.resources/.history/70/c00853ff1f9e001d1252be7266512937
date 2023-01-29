@@ -1,0 +1,5 @@
+package com.Learn.SpringLearn.entity;
+
+public class product_category {
+
+}

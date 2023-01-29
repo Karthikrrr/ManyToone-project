@@ -1,0 +1,26 @@
+package com.Learn.SpringLearn.server;
+
+import java.util.List;
+
+import com.Learn.SpringLearn.entity.product;
+import com.Learn.SpringLearn.entity.product_category;
+
+public class productscall implements productscallint {
+	
+	
+
+	@Override
+	public List<product> getAllproducts() {
+		
+		return null;
+	}
+
+	@Override
+	public List<product_category> getAllcategorys() {
+		
+		return null;
+	}
+	
+	
+
+}

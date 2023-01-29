@@ -1,0 +1,13 @@
+package com.Learn.SpringLearn.server;
+
+import java.util.List;
+
+import com.Learn.SpringLearn.entity.product;
+import com.Learn.SpringLearn.entity.product_category;
+
+public interface productscallint  {
+	
+	public List<product> getAllproducts();
+	
+	public List<product_category> getAllcategorys();
+}

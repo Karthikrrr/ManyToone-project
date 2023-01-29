@@ -1,0 +1,21 @@
+package com.Learn.SpringLearn.Controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.Learn.SpringLearn.server.productscallint;
+
+@Controller
+public class My_Controller {
+
+	private productscallint productscall;
+	
+	@RequestMapping("/")
+	public String Strat(Model model)
+	{
+		model.addAttribute("Catergoryes", productscall.getAllproducts());
+		return "start";
+	}
+	}

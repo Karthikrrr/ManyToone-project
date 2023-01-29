@@ -1,0 +1,5 @@
+package com.Learn.SpringLearn.dao;
+
+public interface product_Repo {
+
+}
